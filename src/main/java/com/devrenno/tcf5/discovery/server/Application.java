@@ -2,12 +2,14 @@ package com.devrenno.tcf5.discovery.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class Tcf5DiscoveryServerApplication {
+@EnableEurekaServer
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Tcf5DiscoveryServerApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
